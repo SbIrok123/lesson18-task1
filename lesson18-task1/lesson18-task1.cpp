@@ -16,6 +16,17 @@ int main()
 	};
 	for (int i = 0; i < N; i++)
 	{
+
 		arr[i].showinfo();
 	}
+	cout << "============================";
+	int amount = 0;
+	for (int i = 0; i < N; i++)
+	{
+		if (arr[i].ram > 10) {
+			arr[i].showinfo();
+			amount++;
+		}
+	}
+	cout <<"\n\namount" << amount;
 }
